@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Heading for the Gallery -->
+    <h1 class="gallery-heading">Gallery Grid Layout by Group 3</h1>
+
+    <div class="gallery">
+        <div class="gallery-item" onclick="openLightbox(); currentSlide(1)">
+            <img src="A.jpg" alt="Image 1" class="gallery-image">
+        </div>
+        <div class="gallery-item" onclick="openLightbox(); currentSlide(2)">
+            <img src="B.jpg" alt="Image 2" class="gallery-image">
+        </div>
+        <div class="gallery-item" onclick="openLightbox(); currentSlide(3)">
+            <img src="C.jpg" alt="Image 3" class="gallery-image">
+        </div>
+        <!-- Add more gallery items here -->
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">×</span>
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="" alt="Lightbox Image">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
